@@ -10,13 +10,17 @@ body {
   }
   @font-face {
     font-family: "Open Sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    src: url(../fonts/OpenSans-Regular.ttf);
+    src: url(../fonts/OpenSans-Regular.woff);
+    src: url(../fonts/OpenSans-Regular.woff2);
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
     font-family: "Open Sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    src: url(../fonts/OpenSans-Bold.ttf);
+    src: url(../fonts/OpenSans-Bold.woff);
+    src: url(../fonts/OpenSans-Bold.woff2);
     font-weight: 700;
     font-style: bold;
   }
@@ -49,6 +53,7 @@ body {
     max-width: 1200px;
     padding: 0 15px;
   }
+
   .menu {
     display: flex;
     justify-content: space-between;
@@ -89,9 +94,123 @@ body {
     margin-top: 107px;
     margin-left: 30px;
   }
+
+  @media (min-width: 641px) and (max-width: 1200px){
+    .header {
+       background-image: url("../images/banner-bg-tablet.jpg"); 
+     }
+     .menu__button {
+      display: block;
+      width: 35px;
+      height: 25px;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+      font-size: 25px;
+      position: relative;
+      cursor: pointer;
+    }
+    .menu__button:before, .menu__button:after {
+      content: "";
+      width: 100%;
+      height: 20%;
+      border-radius: 5px;
+      background-color: #ffffff;
+      position: absolute;
+      left: 0;
+      
+    }
+    .menu__button:before {
+      top:0;
+    }
+     .menu_list_item {
+      display: none;
+    }
+  }
   
   /*--header--*/
+  .trending{
+   width: 100%; 
+  }
+  .trend{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f0d0e;
+    text-align: center;
+
+    margin-top: 55px;
+    margin-bottom: 28px;
+  }
+  .trend::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 66px;
+    height: 3px;
+    background: #b59f5b;
+  }
+  .wrp{
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-end;
+    height: 322px;
+    
+    
+  }
+  .backg{
+    
+    box-sizing: border-box;
+    padding: 20px;
+    width: calc(25% - 3px);
+    margin-right: 3px;
+    
+  }
   
+  .backg_img_a{
+    background-image: url("../images/trend1.jpg");
+    background-repeat: no-repeat; 
+    
+  }
+  .backg_img_b{
+    background-image: url("../images/trend2.jpg");
+    background-repeat: no-repeat; 
+    
+  }
+  .backg_img_c{
+    background-image: url("../images/trend3.jpg");
+    background-repeat: no-repeat; 
+  
+  }
+  .backg_img_d{
+    background-image: url("../images/trend4.jpg");
+    background-repeat: no-repeat; 
+    margin-right: 0;
+    
+  }
+  .square{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 3px solid #b59f5b;
+    padding: 12px 19px;
+    
+  }
+  @media (min-width: 641px) and (max-width: 1200px){
+    .wrp{
+      flex-wrap: wrap;
+      
+    }
+    .backg{
+      min-width: calc(50% - 3px);
+      min-height: 322px;
+    }
+  }
+
   /*--main--*/
   
   .container {
@@ -114,7 +233,7 @@ body {
   }
   
   .left-side {
-    width: 773px;
+    width: 66.2%;
   }
   .box {
     display: flex;
@@ -171,6 +290,18 @@ body {
     font-size: 15px;
     line-height: 1.4;
   }
+  @media (min-width: 641px) and (max-width: 1200px){
+    .box{
+      flex-wrap: wrap;
+
+    }
+    .left-side {
+      min-width: 66.2%;
+    }
+    .image{
+      width: 100%;
+    }
+  }
   
   /*--aside--*/
   .section_aside {
@@ -178,6 +309,7 @@ body {
   }
   .right-side {
     box-sizing: border-box;
+    
   }
   .img_aside {
     width: 70px;
@@ -254,7 +386,7 @@ body {
     height: 45px;
     vertical-align: middle;
     border: none;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-image: url(../svg/search.svg);
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: center;
@@ -356,10 +488,81 @@ body {
     color: #b59f5b;
     font-size: 12px;
   }
-  
+  .product{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+    max-height: 445px;
+    margin-bottom: 80px;
+    padding: 0 20px;
+  }
+  .prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    
+  }
+  .img_product{
+    margin-bottom: 10px;
+  }
+  .img_prod{}
+  .box_product{
+    outline: 3px solid #b59f5b;
+    outline-offset: 30px;
+    width: 300px;
+    height: 260px;
+    
+  }
+  .content_prod{
+    margin: 15px;
+  }
+  .prod_text{
+    margin: 21px;
+    font-weight: 700;
+  }
+  .prod_link{
+    font-family: inherit;
+    color: #b59f5b;
+    text-decoration: none;
+  }
+  .prod_shop{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .value{
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+  }
+  .value_prod_throught{
+    text-decoration: line-through;
+    
+  }
+  .shop{}
+  .product_field{
+
+  }
+  .product_sign{
+    box-sizing: border-box;
+    border: none;
+    padding: 10px 25px;
+    background-color: #b59f5b;
+    font-family: inherit;
+    color: #ffffff;
+    height: 47px;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .product_sign:hover {
+    background: #000000;
+  }
   /*--footer--*/
   .footer {
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .socials {
   }
@@ -390,16 +593,21 @@ body {
     background-size: 23px;
     background-position: center;
   }
-  
   .social_icon_twitter {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+    background-image: url(../svg/004-twitter.svg);
   }
   .social_icon_pinterest {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+    background-image: url(../svg/001-pinterest.svg);
+  }
+  .social_icon_facebook {
+    background-image: url(../svg/002-facebook-logo.svg);
+  }
+  .social_icon_instagram {
+    background-image: url(../svg/005-instagram.svg);
   }
   
   .social_icon_tumblr {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+    background-image: url(../svg/003-tumblr.svg);
   }
   .other_link {
     font-size: 12px;
@@ -413,29 +621,27 @@ body {
   }
   
   .popup {
-    display: flex;
+    position: fixed;
     justify-content: center;
-    align-items: center;
-    top: 250px;
-    right: 650px;
-    width: 318px;
+    display: none;
+    
+    top: calc(50% - 314px/2);
+    right: calc(50% - 472px/2);
+    width: 314px;
     height: 472px;
     padding: 38px 30px;
     background-color: #ffffff;
   }
-  .popap_toggle:checked + .popap {
-    display: none;
-  }
+
   .popap_content {
     position: relative;
     box-sizing: border-box;
   }
-  .popap_close {
+  .popap_img {
     position: absolute;
-    width: 20px;
-    color: black;
-    right: -20px;
-    top: -20px;
+    width: 15px;
+    right: -23px;
+    top: -57px;
   }
   
   .popap_head {
@@ -445,7 +651,7 @@ body {
     color: #0f0d0e;
     text-align: center;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
   }
   .popap_head::after {
     content: "";
@@ -487,7 +693,7 @@ body {
     font-family: inherit;
     font-size: 12px;
   
-    background-image: url(../images/form-arrows.svg);
+    background-image: url(../svg/form-arrows.svg);
     background-repeat: no-repeat;
     background-position: center right 5px;
     background-size: 10px;
@@ -506,14 +712,14 @@ body {
     width: 20px;
     height: 20px;
   
-    background-image: url(../images/form-empty-circle.svg);
+    background-image: url(../svg/form-empty-circle.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 13px;
     vertical-align: middle;
   }
   .radio:checked + .radio_group::before {
-    background-image: url(../images/form-circle.svg);
+    background-image: url(../svg/form-circle.svg);
   }
   .textfield {
     min-width: 267px;
@@ -522,6 +728,8 @@ body {
     border: none;
     font-family: inherit;
     background-color: #f4f7f6;
+    font-size: 10px;
+    padding: 16px;
   }
   .popap_sign {
     box-sizing: border-box;

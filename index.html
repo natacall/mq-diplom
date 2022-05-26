@@ -7,12 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css" />
   <title>MQ diploma</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
   <header class="header">
     <div class="capline">
@@ -23,6 +18,9 @@
           </a>
         </div>
         <nav class="menu_list">
+          <button class="menu__button h-menu__button">
+            <span class="hidden_row">открыть меню</span>
+          </button>
           <ul class="menu_list_item">
             <li class="menu_item">
               <a href="#" class="menu_link">
@@ -63,6 +61,70 @@
       и образе жизни
     </h1>
   </header>
+  <div class="trending">
+    <h2 class="trend">
+        СЕЙЧАС В ТРЕНДЕ
+    </h2>
+    <div class="wrp">
+      <div class="backg backg_img_a">
+          <div class="square">
+            <ul class="link">
+              <li class="link_item">
+                <a href="#" class="content_link">lIFESTYLE</a>
+              </li>
+              <li class="link_item">
+                <a href="#" class="content_link">INTERIOR</a>
+              </li>
+            </ul>
+            <h2 class="headline">
+              СЕЙЧАС В ТРЕНДЕ:САД НА ПОДОКОННИКЕ
+            </h2>
+          </div>
+      </div>
+      <div class="backg backg_img_b">
+          <div class="square">
+            <ul class="link">
+              <li class="link_item">
+                <a href="#" class="content_link">FOOD</a>
+              </li>
+            </ul>
+            <h2 class="headline">
+              СЫРЫ НА КРАСИВЫХ КАРТИНКАХ ИЗ ИНТЕРНЕТА: КАКИЕ ОНИ НА ВКУС?
+            </h2>
+          </div>
+      </div>
+      <div class="backg backg_img_c">
+          <div class="square">
+            <ul class="link">
+              <li class="link_item">
+                <a href="#" class="content_link">lIFESTYLE</a>
+              </li>
+              <li class="link_item">
+                <a href="#" class="content_link">TRAVEL</a>
+              </li>
+            </ul>
+            <h2 class="headline">
+              СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ
+            </h2>
+          </div>
+      </div>
+      <div class="backg backg_img_d">
+          <div class="square">
+            <ul class="link">
+              <li class="link_item">
+                <a href="#" class="content_link">FOOD</a>
+              </li>
+              <li class="link_item">
+                <a href="#" class="content_link">HEALTH</a>
+              </li>
+            </ul>
+            <h2 class="headline">
+              СЕЙЧАС В ТРЕНДЕ:СКОЛЬКО ВИТАМИНА C В ЛИМОНАХ?
+            </h2>
+          </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="main_unit">
       <main class="left-side">
@@ -202,60 +264,7 @@
             </div>
           </div>
         </article>
-        <article class="box">
-          <div class="img">
-            <img src="images/last-post1.jpg" class="image" alt="">
-          </div>
-          <div class="content">
-            <ul class="link">
-              <li class="link_item">
-                <a href="#" class="content_link">travel</a>
-              </li>
-              <li class="link_item">
-                <a href="#" class="content_link">lifestyle</a>
-              </li>
-            </ul>
-            <h2 class="headline">
-              <a href="#" class="headline_link">как первый раз отправиться в горы?</a>
-            </h2>
-            <div class="time_author">
-              <time class="data">10 июня 2019 </time>
-              <span class="author">неизвестный автор</span>
-            </div>
-            <div class="text">
-              <p>
-                Для начала нужно определиться, в каком формате пройдет ваше путешествие. Это зависит от многих факторов, не только от ваших желаний и интересов.
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="box">
-          <div class="img">
-            <img src="images/last-post1.jpg" class="image" alt="">
-          </div>
-          <div class="content">
-            <ul class="link">
-              <li class="link_item">
-                <a href="#" class="content_link">lyfestyle</a>
-              </li>
-              <li class="link_item">
-                <a href="#" class="content_link">food</a>
-              </li>
-            </ul>
-            <h2 class="headline">
-              <a href="#" class="headline_link">наукоёмкий подход к кулинарии</a>
-            </h2>
-            <div class="time_author">
-              <time class="data">10 июня 2019</time>
-              <span class="author">неизвестный автор</span>
-            </div>
-            <div class="text">
-              <p>
-                Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
-              </p>
-            </div>
-          </div>
-        </article>
+       
       </main>
       <aside class="right-side">
         <div class="box_aside">
@@ -428,6 +437,91 @@
         </div>
       </aside>
     </div>
+    <h2 class="trend">
+        НАШИ ИЗДЕЛИЯ
+    </h2>
+    <div class="product">
+      <div class="prod">
+        <div class="img_product">
+          <img src="images/shop-item-desk1.jpg" class="img_prod" alt="">
+        </div>
+        <div class="box_product">
+          <h3 class="content_prod">
+            ПОДУШКИ НА ДИВАН
+          </h3>
+          <div class="prod_text">
+            <p>
+              Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="prod_link">здесь.</a>
+            </p>
+          </div>
+          <div class="prod_shop">
+            <div class="value">
+              <div class="value_prod_throught">1000</div>
+              <div class="value_prod">800</div>
+            </div>
+            <form class="shop">
+              <label class="product_field">
+                <span class="hidden_row">в магазин</span>
+                <button type="submit" class="product_sign">В МАГАЗИН</button>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="img_product">
+          <img src="images/shop-item-desk2.jpg" class="img_prod" alt="">
+        </div>
+        <div class="box_product">
+          <h3 class="content_prod">
+            КУКЛА ЗАЙЧИК
+          </h3>
+          <div class="prod_text">
+            <p>
+              Интерьерная рукодельная кукла Зайчик, созданию которой посвящена <a href="#" class="prod_link">весенняя серия постов</a> в блоге и несколько подкастов.
+            </p>
+          </div>
+          <div class="prod_shop">
+            <div class="value">
+              3500
+            </div>
+            <form class="shop">
+              <label class="product_field">
+                <span class="hidden_row">в магазин</span>
+                <button type="submit" class="product_sign">В МАГАЗИН</button>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="img_product">
+          <img src="images/shop-item-desk3.jpg" class="img_prod" alt="">
+        </div>
+        <div class="box_product">
+          <h3 class="content_prod">
+            ШЕСТИУГОЛЬНАЯ РАМКА
+          </h3>
+          <div class="prod_text">
+            <p>
+              Необычная рамка для украшения дома из видео <a href="#" class="prod_link">Как сделать рамку из подручных средств за 30 минуть</a>
+            </p>
+          </div>
+          <div class="prod_shop">
+            <div class="value">
+              <div class="value_prod_throught">500</div>
+              <div class="value_prod">400</div>
+            </div>
+            <form class="shop">
+              <label class="product_field">
+                <span class="hidden_row">в магазин</span>
+                <button type="submit" class="product_sign">В МАГАЗИН</button>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="socials">
         <address class="social_list_item">
@@ -442,13 +536,21 @@
                 <span class="hidden">pinterest</span>
               </a>
             </li>
-
+            <li class="socials_item">
+              <a href="#0" class="social_icon social_icon_facebook">
+                <span class="hidden">facebook</span>
+              </a>
+            </li>
+            <li class="socials_item">
+              <a href="#0" class="social_icon social_icon_instagram">
+                <span class="hidden">instagram</span>
+              </a>
+            </li>
             <li class="socials_item">
               <a href="#0" class="social_icon social_icon_tumblr">
                 <span class="hidden">tumblr</span>
               </a>
             </li>
-
           </ul>
         </address>
       </div>
@@ -458,12 +560,12 @@
         </a>
       </div>
     </footer>
-    <input type="checkbox" id="popap1" class="popap_toggle">
+
     <div class="popup">
       <div class="popap_content">
-        <label for="popap1" class="popap_close">
-          <img src="images/form-x.svg" class="popap_img" alt="">
-        </label>
+        <div class="popap_close">
+          <img src="svg/form-x.svg" class="popap_img" alt=""/>
+        </div>
         <div class="popap_head">
           ВАШ ФИДБЕК
         </div>
@@ -490,8 +592,7 @@
           </div>
           <label class="popap_field">
             <span class="popap_text">Расскажите,какой контент вы хотели бы видеть на нашем сайте?</span>
-            <textarea class="textfield" placeholder="Может, больше рецептов?" required>
-							</textarea>
+            <textarea class="textfield" placeholder="Может, больше рецептов?" required></textarea>
           </label>
           <label class="popap_field">
             <span class="hidden_row">отправить</span>
