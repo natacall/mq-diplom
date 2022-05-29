@@ -18,8 +18,8 @@
           </a>
         </div>
         <nav class="menu_list">
-          <button class="menu__button h-menu__button">
-            <span class="hidden_row">открыть меню</span>
+          <button class="menu__button">
+            <span class="hidden_row_button"></span>
           </button>
           <ul class="menu_list_item">
             <li class="menu_item">
@@ -76,7 +76,7 @@
                 <a href="#" class="content_link">INTERIOR</a>
               </li>
             </ul>
-            <h2 class="headline">
+            <h2 class="headline_trend">
               СЕЙЧАС В ТРЕНДЕ:САД НА ПОДОКОННИКЕ
             </h2>
           </div>
@@ -88,7 +88,7 @@
                 <a href="#" class="content_link">FOOD</a>
               </li>
             </ul>
-            <h2 class="headline">
+            <h2 class="headline_trend">
               СЫРЫ НА КРАСИВЫХ КАРТИНКАХ ИЗ ИНТЕРНЕТА: КАКИЕ ОНИ НА ВКУС?
             </h2>
           </div>
@@ -103,7 +103,7 @@
                 <a href="#" class="content_link">TRAVEL</a>
               </li>
             </ul>
-            <h2 class="headline">
+            <h2 class="headline_trend">
               СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ
             </h2>
           </div>
@@ -118,7 +118,7 @@
                 <a href="#" class="content_link">HEALTH</a>
               </li>
             </ul>
-            <h2 class="headline">
+            <h2 class="headline_trend">
               СЕЙЧАС В ТРЕНДЕ:СКОЛЬКО ВИТАМИНА C В ЛИМОНАХ?
             </h2>
           </div>
@@ -442,9 +442,12 @@
     </h2>
     <div class="product">
       <div class="prod">
-        <div class="img_product">
+        <picture class="img_product">
+          <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+          <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+          <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
           <img src="images/shop-item-desk1.jpg" class="img_prod" alt="">
-        </div>
+        </picture>
         <div class="box_product">
           <h3 class="content_prod">
             ПОДУШКИ НА ДИВАН
@@ -469,9 +472,12 @@
         </div>
       </div>
       <div class="prod">
-        <div class="img_product">
+        <picture class="img_product">
+          <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+          <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+          <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
           <img src="images/shop-item-desk2.jpg" class="img_prod" alt="">
-        </div>
+        </picture>
         <div class="box_product">
           <h3 class="content_prod">
             КУКЛА ЗАЙЧИК
@@ -495,9 +501,12 @@
         </div>
       </div>
       <div class="prod">
-        <div class="img_product">
+        <picture class="img_product">
+          <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+          <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+          <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
           <img src="images/shop-item-desk3.jpg" class="img_prod" alt="">
-        </div>
+        </picture>
         <div class="box_product">
           <h3 class="content_prod">
             ШЕСТИУГОЛЬНАЯ РАМКА
@@ -560,7 +569,6 @@
         </a>
       </div>
     </footer>
-
     <div class="popup">
       <div class="popap_content">
         <div class="popap_close">
